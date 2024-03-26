@@ -1,0 +1,9 @@
+.bg-dark {
+  background-color: black;
+  color: white;
+}
+.container {
+  max-width: 250px;
+  max-height: 500px;
+  border: 1px solid red;
+}
