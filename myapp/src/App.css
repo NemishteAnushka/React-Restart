@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.center {
+  text-align: center;
+  margin-top: 3rem;
+}
+.btn {
+  padding: 1rem;
+  margin: 1rem;
+}
+.user {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.812);
+  color: white;
+}

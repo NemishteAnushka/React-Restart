@@ -1,15 +1,21 @@
 import React from "react";
-import RenderList from "./components/listRender/RenderList";
+import UsestateExample from "./components/useState/Example/UsestateExample";
+// import StateExampleObject from "./components/useState/StateExampleObject";
+// import StateExampleArray from "./components/useState/StateExampleArray";
+// import Counter from "./components/useState/Counter";
+// import UseState from "./components/useState/UseState";
+// import Events from "./components/events/Events";
+// import RenderList from "./components/listRender/RenderList";
 // import ChildrenProps from "./components/props/ChildrenProps";
 // import Props from "./components/props/Props";
 // import HelloWorld from "./components/HelloWorld";
 // import Greetings from "./components/Greetings";
-const users = [
-  { userId: 1, firstName: "Anushka", lastName: "Nemishte" },
-  { userId: 2, firstName: "Anuja", lastName: "Nemishte" },
-  { userId: 3, firstName: "Neha", lastName: "Kulkarni" },
-  { userId: 4, firstName: "Prajkata", lastName: "Patil" },
-];
+// const users = [
+//   { userId: 1, firstName: "Anushka", lastName: "Nemishte" },
+//   { userId: 2, firstName: "Anuja", lastName: "Nemishte" },
+//   { userId: 3, firstName: "Neha", lastName: "Kulkarni" },
+//   { userId: 4, firstName: "Prajkata", lastName: "Patil" },
+// ];
 function App() {
   // const arrayProps = ["fruit", "vegetable"];
   // const objectProps = { hobby: "dance" };
@@ -17,6 +23,7 @@ function App() {
     <>
       {/* <HelloWorld />
       <Greetings /> */}
+
       {/* we can also pass array,object and numbers through props*/}
       {/* <Props
         firstName="Avinash"
@@ -25,9 +32,10 @@ function App() {
         arrayProps={arrayProps}
         objectProps={objectProps}
       /> */}
-      {/* <ChildrenProps>Hii there , How are you</ChildrenProps> */}
-      {/* we use map method to render list */}
 
+      {/* <ChildrenProps>Hii there , How are you</ChildrenProps> */}
+
+      {/* we use map method to render list */}
       {/* method 1
       {users.map((user) => {
         return (
@@ -35,9 +43,21 @@ function App() {
         );
       })} */}
       {/* method 2 */}
-      {users.map((user) => (
+      {/* {users.map((user) => (
         <RenderList {...user} key={user.userId} />
-      ))}
+      ))} */}
+
+      {/* <Events /> */}
+
+      {/* <UseState/> */}
+
+      {/* <Counter/> */}
+
+      {/* <StateExampleArray/> */}
+
+      {/* <StateExampleObject/> */}
+
+      <UsestateExample/>
     </>
   );
 }
