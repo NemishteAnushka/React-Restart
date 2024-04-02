@@ -1,5 +1,6 @@
 import React from "react";
-import UsestateExample from "./components/useState/Example/UsestateExample";
+// import UsestateExample from "./components/useState/Example/UsestateExample";
+import Form from "./components/form/Form";
 // import StateExampleObject from "./components/useState/StateExampleObject";
 // import StateExampleArray from "./components/useState/StateExampleArray";
 // import Counter from "./components/useState/Counter";
@@ -57,7 +58,9 @@ function App() {
 
       {/* <StateExampleObject/> */}
 
-      <UsestateExample/>
+      {/* <UsestateExample/> */}
+
+      <Form/>
     </>
   );
 }
