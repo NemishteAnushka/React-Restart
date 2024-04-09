@@ -1,11 +1,14 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 import { v4 as uuid } from "uuid";
 function TodoForm({ addtodo }) {
   const [title, setTitle] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title.trim().length === 0) {
-      return alert("please enter task then hit 'Enter'");
+      return toast.error("please enter task then hit 'Enter'",{
+        autoClose:2000
+      });
     }
     const newtodo = {
       id: uuid(),
