@@ -1,5 +1,11 @@
 import React from "react";
-import TodoList from "./components/todolist/TodoList";
+import SetStateAsync from "./components/setStateAsync/SetStateAsync";
+// import RemoveRedundantState from "./components/moreAboutStates/RemoveRedundantState";
+// import ExampleUseRefForm from "./components/useRef/ExampleUseRefForm";
+// import ExampleUseRef from "./components/useRef/ExampleUseRef";
+// import MultipleInputs from "./components/form/MultipleInputs";
+// import Radio from "./components/form/Radio";
+// import TodoList from "./components/todolist/TodoList";
 // import UsestateExample from "./components/useState/Example/UsestateExample";
 // import Form from "./components/form/Form";
 // import StateExampleObject from "./components/useState/StateExampleObject";
@@ -63,7 +69,19 @@ function App() {
 
       {/* <Form/> */}
 
-      <TodoList/>
+      {/* <TodoList/> */}
+
+      {/* <Radio/> */}
+
+      {/* <MultipleInputs/> */}
+
+      {/* <ExampleUseRef /> */}
+
+      {/* <ExampleUseRefForm /> */}
+
+      {/* <RemoveRedundantState /> */}
+
+      <SetStateAsync/>
     </>
   );
 }
