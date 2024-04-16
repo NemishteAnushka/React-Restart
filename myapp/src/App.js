@@ -1,5 +1,6 @@
 import React from "react";
-import SetStateAsync from "./components/setStateAsync/SetStateAsync";
+import InitialStateWithFunction from "./components/moreAboutStates/InitialStateWithFunction";
+// import SetStateAsync from "./components/setStateAsync/SetStateAsync";
 // import RemoveRedundantState from "./components/moreAboutStates/RemoveRedundantState";
 // import ExampleUseRefForm from "./components/useRef/ExampleUseRefForm";
 // import ExampleUseRef from "./components/useRef/ExampleUseRef";
@@ -81,7 +82,9 @@ function App() {
 
       {/* <RemoveRedundantState /> */}
 
-      <SetStateAsync/>
+      {/* <SetStateAsync/> */}
+
+      {<InitialStateWithFunction />}
     </>
   );
 }
