@@ -1,7 +1,10 @@
 import { useState } from "react";
 import "./App.css";
+// import AbortRequest from "./component/AbortRequest";
+import FocusInputOnMount from "./component/FocusInputOnMount";
 // import CleanUpFunction from "./component/CleanUpFunction";
-import MouseMoveEvent from "./component/MouseMoveEvent";
+// import MouseMoveEvent from "./component/MouseMoveEvent";
+// import CleanUpFunctionExample2 from "./component/CleanUpFunctionExample2";
 // import UseEffectExample1 from "./component/UseEffectExample1";
 // import FetchDataExample from "./component/FetchDataExample";
 // import ExampleUseEffect from "./component/ExampleUseEffect";
@@ -23,7 +26,8 @@ function App() {
           setShowComponent(!showComponent);
         }}
       />
-      {showComponent && <MouseMoveEvent />}
+      {/* {showComponent && <AbortRequest />} */}
+      {showComponent && <FocusInputOnMount />}
     </div>
   );
 }
