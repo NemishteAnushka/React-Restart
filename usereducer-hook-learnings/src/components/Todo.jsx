@@ -13,7 +13,6 @@ function Todo({ completed, id, title, dispatch }) {
         fontFamily: "sans-serif",
         backgroundColor: "gray",
         color: "white",
-        textAlign: "center",
         paddingLeft: "0.5rem",
         borderRadius: "1rem",
         marginTop: "1rem",
@@ -21,7 +20,9 @@ function Todo({ completed, id, title, dispatch }) {
       }}
     >
       <h3>ID : {id}</h3>
-      <h3>Title : {title}</h3>
+      <h3 style={{ textDecoration: completed ? "line-through" : "solid" }}>
+        Title : {title}
+      </h3>
       <h3>Completed : {completed ? "Done" : "Not Done"}</h3>
       <button onClick={handleDelete}>Delete</button>
       <button onClick={handleCompleted}>ToggleCompleted</button>

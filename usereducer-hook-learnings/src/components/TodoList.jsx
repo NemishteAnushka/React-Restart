@@ -4,8 +4,12 @@ import Todos from "./Todos";
 
 function TodoList() {
   function myReducer(todos, action) {
+    console.log(action);
     if (action.type === "DELETE") {
       return todos.filter((todo) => action.payload !== todo.id);
+    }
+    if (action.type === "ADD_TODO") {
+      return [...todos, action.payload];
     }
     if (action.type === "COMPLETED") {
       return todos.map((todo) => {
@@ -28,7 +32,7 @@ function TodoList() {
   return (
     <div>
       <h2>Todo List Using UseReducer()</h2>
-      <AddTodo />
+      <AddTodo dispatch={dispatch} />
       <Todos todos={todos} dispatch={dispatch} />
     </div>
   );
