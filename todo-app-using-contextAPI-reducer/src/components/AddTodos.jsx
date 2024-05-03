@@ -3,10 +3,14 @@ import { v4 as uuid } from "uuid";
 import { TodoContext } from "./TodoProvider";
 function AddTodos() {
   const { addTodo } = useContext(TodoContext);
+  const [title, setTitle] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("submitted");
-
+    if (title.trim().length === 0) {
+      alert("Type Something.......");
+      return;
+    }
     const newTodo = {
       id: uuid(),
       title: title,
@@ -15,7 +19,7 @@ function AddTodos() {
     addTodo(newTodo);
     setTitle("");
   };
-  const [title, setTitle] = useState("");
+
   const handleChange = (e) => {
     setTitle(e.target.value);
   };
